@@ -110,8 +110,8 @@
 
 /* ESTILO CONTENIDO */
 .content {
-    margin-top: 80px; /* Espacio para la cabecera */
-    margin-left: 300px; /* Espacio para el menú lateral */
+    margin-top: 80px; 
+    margin-left: 300px; 
     padding: 20px;
     background-color: #f9f9f9;
     min-height: calc(100vh - 80px);
@@ -129,19 +129,18 @@
     border-collapse: collapse;
 }
 
-
+/* TAMAÑO TABLAS Y BORDE*/
 .content th, .content td {
     padding: 20px;
     text-align: center;
     border: 2px solid #a1a0a0;
 }
 
-.content td {
-    background-color: #f4f4f4;
-}
 .hora-col{
     width: 80px;
 }
+
+/* TAMAÑO Y DISEÑO PDF*/
 .BOTON-DESCARGAR {
     display: inline-flex;
     background-color: red;
@@ -152,6 +151,7 @@
     margin-bottom: 100px;
 
 }
+
 .BOTON-DESCARGAR i {
     margin-right: 8px;
 }
