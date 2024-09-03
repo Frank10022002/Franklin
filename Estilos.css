@@ -82,7 +82,7 @@
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }
-
+/* ESTILOS PARA LA LISTA*/
 .LISTA > li > a, .submenu li > a {
     color: #333;
     text-decoration: none;
