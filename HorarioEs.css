@@ -1,0 +1,184 @@
+/* Estilos Existentes */
+.menuv {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    overflow-x: hidden;
+    transition: transform 0.5s ease;
+    padding-top: 10px;
+    box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.CABEZA{
+    position: fixed;
+    top: 0;
+    left: 300px;
+    background-color: rgb(52, 52, 199);
+    height: 80px;
+    width: calc(100% - 300px);
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    transition: 0.5s;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ESTILO BOTON */
+.CABEZA button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ESTILO LETRAS */
+.CABEZA p {
+    color: #fff;
+    margin: 0;
+    font-size: 20px; 
+}
+
+/* ESTILO CONTENEDOR */
+.LOGOUNI {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/* TAMAÑO DE LA IMG */
+.LOGOUNI img {
+    max-width: 50px; 
+    height: auto;
+    margin-right: 10px; 
+}
+
+/* AJUSTE LOGO*/
+.LOGOUNI .p1, .LOGOUNI .p2 {
+    margin: 0;
+    color: #333;
+}
+
+.menu-closed .menuv {
+    transform: translateX(-300px);
+}
+
+.menu-closed .CABEZA {
+    left: 0;
+    width: 100%;
+}
+
+.LISTA, .submenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #ccc;
+}
+
+.LISTA > li, .submenu li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.LISTA > li > a, .submenu li > a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.submenu {
+    display: none;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-color: #f1f1f1;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.submenu.open {
+    display: block;
+    max-height: 500px;
+    padding: 10px 0;
+}
+
+/* ESTILO CONTENIDO */
+.content {
+    margin-top: 80px; /* Espacio para la cabecera */
+    margin-left: 300px; /* Espacio para el menú lateral */
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: calc(100vh - 80px);
+    transition: margin-left 0.5s ease;
+}
+
+/* AJUSTE DE MENU CERRADO */
+.menu-closed .content {
+    margin-left: 0;
+}
+
+/* ESTILO TABLA */
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.content th, .content td {
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #a1a0a0;
+}
+
+.content td {
+    background-color: #f4f4f4;
+}
+.hora-col{
+    width: 80px;
+}
+.BOTON-DESCARGAR {
+    display: inline-flex;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 100px;
+
+}
+.BOTON-DESCARGAR i {
+    margin-right: 8px;
+}
+p,h1,.BOTON-DESCARGAR{ 
+    margin-left: 20px;
+}
+
+/* Estilo Responsivo */
+@media (max-width: 768px) {
+    .menuv {
+        width: 100%;
+        height: auto;
+        position: relative;
+        transform: translateX(-100%);
+    }
+    
+    .menu-closed .menuv {
+        transform: translateX(-100%);
+    }
+    
+    .CABEZA {
+        left: 0;
+        width: 100%;
+    }
+    
+    .content {
+        margin-left: 0;
+        margin-top: 80px;
+    }
+}
